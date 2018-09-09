@@ -47,7 +47,7 @@ count = 0
 
     #print("title:" + title+ "\n price:" + price + "\n color:" + color )
     # print(color)
-    count += 1
+    #count += 1
 print(count)
 # for t in price:
 #     print("price: %s" % t.text)
