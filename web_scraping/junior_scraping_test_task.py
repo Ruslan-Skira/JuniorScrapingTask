@@ -1,6 +1,7 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+import re
 
 # TODO Junior Scraping Test Task
 # Task: parse data from the site https://suzyshier.com/
@@ -23,7 +24,6 @@ from bs4 import BeautifulSoup
 
 #url = "https://suzyshier.com/collections/sz_shop-all"
 
-#todo def Bootom_category
 url = "https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms"
 url_products = "https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms/products"
 
@@ -35,9 +35,54 @@ price = soup.find_all("span")
 empty = []
 # for text in title:
 #     print("title :%s" % text.text)
-count = 0
-# for i in products:
-#     title = i.contents[1].find_all("h2", {"class": "featured-collection__product-title"})[0].text
+# todo take unic url of the products
+def products_urls():
+    count = 0
+    urls = []
+    for i in products:
+        pr_url = soup.find_all("a", href=re.compile("sz_bottoms_shop-all-bottoms/products"))[count]["href"]
+        urls.append('https://suzyshier.com'+ pr_url)
+        count += 1
+    urls = set(urls)
+    return urls
+
+#print(products_urls())
+
+# TODO write def for open and read at least tile from urls DONE.
+# todo create dictionary and put there title DONE.
+# todo
+def get_data_from_url():
+    count = 0
+    my_dic= {}
+    for i in products_urls():
+
+        r = requests.get(i)
+        soup = BeautifulSoup(r.content, features="html.parser")
+        title = soup.find_all("h1", {"class": "header"})[0].text
+        price = soup.find_all("span", {"class": "product__price"})[0].text
+        color = soup.find_all("label", {"class": 'product__radio'})[0]["title"]
+        # dictionary of all sizes
+        sizes = soup.find_all("input", {"class": "product__radio"})
+        list_sizes = ""
+        for k in sizes:
+            list_sizes += k["value"]+","
+
+        #print(list_sizes)
+
+        count += 1
+        my_dic = {'title': title, 'price': price, 'color': color, "sizes": list_sizes}
+        print(my_dic)
+        #print(sizes)
+        #print(list_sizes)
+    #url_products_plus = url_products + ''
+    return
+
+get_data_from_url()
+#print(pr_url + str(count) + "\n" + title_pr)
+#title_pr = i.contents[1].find_all("h2", {"class": "featured-collection__product-title"})[0].text
+    #products_url = i.contents[1].find_all("a", {"class": "featured-collection__product-title"})
+    #products_url = soup.find_all("a", href=re.compile("sz_bottoms_shop-all-bottoms/products"))[count]["href"]
+
 #     price = i.contents[1].find_all("span", {"class": "grid-item-price"})[0].text
 #     color = i.contents[1].find_all("input", {"class": "swatch-radio js-quick-add-color"})[0]["value"]
     #sizes = ""
@@ -47,13 +92,11 @@ count = 0
 
     #print("title:" + title+ "\n price:" + price + "\n color:" + color )
     # print(color)
-    #count += 1
-print(count)
+
+
 # for t in price:
 #     print("price: %s" % t.text)
 
-#https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms
-#products/0711-24708571-striped-pants-with-multicolored-taping
 #TODO you have second page make the def url
 
 
