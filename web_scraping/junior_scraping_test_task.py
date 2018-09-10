@@ -46,58 +46,42 @@ def products_urls():
     urls = set(urls)
     return urls
 
-#print(products_urls())
 
 # TODO write def for open and read at least tile from urls DONE.
 # todo create dictionary and put there title DONE.
 # todo
 def get_data_from_url():
     count = 0
-    my_dic= {}
+    full_dictionary= []
     for i in products_urls():
 
         r = requests.get(i)
         soup = BeautifulSoup(r.content, features="html.parser")
         title = soup.find_all("h1", {"class": "header"})[0].text
-        price = soup.find_all("span", {"class": "product__price"})[0].text
+        price = soup.find_all("span", {"class": "product__price"})[0].text.strip()
+
         color = soup.find_all("label", {"class": 'product__radio'})[0]["title"]
         # dictionary of all sizes
         sizes = soup.find_all("input", {"class": "product__radio"})
         list_sizes = ""
         for k in sizes:
             list_sizes += k["value"]+","
-
-        #print(list_sizes)
-
         count += 1
+
         my_dic = {'title': title, 'price': price, 'color': color, "sizes": list_sizes}
         print(my_dic)
-        #print(sizes)
-        #print(list_sizes)
-    #url_products_plus = url_products + ''
+        full_dictionary.append(my_dic)
+
+
+    with open('firstBottomPage.json', 'w') as f:
+        json.dump(full_dictionary, f, indent=2)
     return
 
 get_data_from_url()
-#print(pr_url + str(count) + "\n" + title_pr)
-#title_pr = i.contents[1].find_all("h2", {"class": "featured-collection__product-title"})[0].text
-    #products_url = i.contents[1].find_all("a", {"class": "featured-collection__product-title"})
-    #products_url = soup.find_all("a", href=re.compile("sz_bottoms_shop-all-bottoms/products"))[count]["href"]
 
 #     price = i.contents[1].find_all("span", {"class": "grid-item-price"})[0].text
 #     color = i.contents[1].find_all("input", {"class": "swatch-radio js-quick-add-color"})[0]["value"]
-    #sizes = ""
-    #specs
-    #description
-#todo rewrite this for the pages exactly product so you can take all information cycle
 
-    #print("title:" + title+ "\n price:" + price + "\n color:" + color )
-    # print(color)
-
-
-# for t in price:
-#     print("price: %s" % t.text)
-
-#TODO you have second page make the def url
 
 
 #TODO def WEB EXCLUSIVES():
