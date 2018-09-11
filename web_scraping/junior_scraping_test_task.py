@@ -28,9 +28,6 @@ url_products = "https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms/pr
 r = requests.get(url)
 soup = BeautifulSoup(r.content, features="html.parser")
 products = soup.find_all("li", class_="grid__item one-fifth medium--one-quarter small--one-half product-list__item")
-title = soup.find_all("h2", class_="featured-collection__product-title")
-price = soup.find_all("span")
-empty = []
 
 # todo take unic url of the products
 def products_urls():
