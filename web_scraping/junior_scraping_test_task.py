@@ -34,10 +34,10 @@ def products_urls():
     count = 0
     urls = []
     for i in products:
-        pr_url = soup.find_all("a", href=re.compile("sz_bottoms_shop-all-bottoms/products"))[count]["href"]
-        urls.append('https://suzyshier.com'+ pr_url)
+        pr_url = i.contents[1].find_all("a", href=True)[0]["href"]
+        urls.append('http://suzyshier.com' + pr_url)
         count += 1
-    urls = set(urls)
+    print(len(urls))
     return urls
 
 
@@ -72,9 +72,3 @@ def get_data_from_url():
 
 get_data_from_url()
 
-#     price = i.contents[1].find_all("span", {"class": "grid-item-price"})[0].text
-#     color = i.contents[1].find_all("input", {"class": "swatch-radio js-quick-add-color"})[0]["value"]
-
-
-
-# TODO def WEB EXCLUSIVES():

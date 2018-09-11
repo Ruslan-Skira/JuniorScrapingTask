@@ -1,21 +1,15 @@
 [
   {
-    "title": "Suzy Shier Pull-on Skinny Pants with Zipper Pockets",
-    "price": "$36.00",
-    "color": "Black",
-    "sizes": "X-Small,Small,Medium,Large,X-Large,"
-  },
-  {
-    "title": "Suzy Shier Seamless Fleece Lined Leggings",
-    "price": "$12.99",
+    "title": "Suzy Shier Fleece Lined Jogger Leggings",
+    "price": "$24.00",
     "color": "Black",
     "sizes": "S/M,L/XL,"
   },
   {
-    "title": "Suzy Shier Faux Suede Pencil Skirt with Exposed Back Zipper",
-    "price": "$19.99",
-    "color": "Dynasty",
-    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+    "title": "Suzy Shier Chevron Sweater Knit Flippy Skirt",
+    "price": "$29.00",
+    "color": "Black",
+    "sizes": "Small,Medium,Large,"
   },
   {
     "title": "Suzy Shier Slim Velour Joggers with Drawstring",
@@ -24,21 +18,33 @@
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
-    "title": "Suzy Shier Diamond Skinny Pants with Vertical Zips",
-    "price": "$30.00",
+    "title": "Suzy Shier Chevron Fleece Lined Leggings",
+    "price": "$18.00",
     "color": "Black",
-    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+    "sizes": "S/M,L/XL,"
   },
   {
-    "title": "Suzy Shier Leggings with Front Tie",
-    "price": "$26.00",
-    "color": "Grey",
-    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+    "title": "Suzy Shier Navajo Print Leggings",
+    "price": "$18.00",
+    "color": "Merlot",
+    "sizes": "S/M,L/XL,"
   },
   {
     "title": "Suzy Shier Slim Velour Joggers with Side Stripes",
     "price": "$28.00",
     "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Ruffled Front Skirt with Back Flounce",
+    "price": "$34.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Polar Fleece Dotted Pajama Pants",
+    "price": "$18.00",
+    "color": "Pink",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
@@ -48,21 +54,15 @@
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
-    "title": "Suzy Shier Wide Leg Jeans",
-    "price": "$49.00",
-    "color": "Dk Denim Blue",
-    "sizes": "1,3,5,7,9,11,13,15,"
-  },
-  {
-    "title": "Suzy Shier Faux Leather Pencil Skirt with Side Stripes",
-    "price": "$36.00",
-    "color": "Black",
+    "title": "Suzy Shier Polar Fleece Dandelion Print Pajama Pants",
+    "price": "$18.00",
+    "color": "Lt Grey",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
-    "title": "Suzy Shier Belted Houndstooth Skinny Knit Pants",
-    "price": "$30.00",
-    "color": "Black",
+    "title": "Suzy Shier Leggings with Front Tie",
+    "price": "$26.00",
+    "color": "Grey",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
@@ -72,10 +72,34 @@
     "sizes": "S/M,L/XL,"
   },
   {
-    "title": "Suzy Shier Striped Pants with Multicolored Taping",
-    "price": "$19.99",
+    "title": "Suzy Shier Faux Leather Pencil Skirt with Side Stripes",
+    "price": "$36.00",
     "color": "Black",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Faux Suede Pencil Skirt with Exposed Back Zipper",
+    "price": "$19.99",
+    "color": "Dynasty",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Diamond Skinny Pants with Vertical Zips",
+    "price": "$30.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Grid Pattern Brushed Leggings",
+    "price": "$18.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Wide Leg Jeans",
+    "price": "$49.00",
+    "color": "Dk Denim Blue",
+    "sizes": "1,3,5,7,9,11,13,15,"
   },
   {
     "title": "Suzy Shier Skinny Jeans with Wide Patterned Belt",
@@ -84,10 +108,10 @@
     "sizes": "1,3,5,7,9,11,13,15,"
   },
   {
-    "title": "Suzy Shier Navajo Print Leggings",
-    "price": "$18.00",
-    "color": "Merlot",
-    "sizes": "S/M,L/XL,"
+    "title": "Suzy Shier Faux Suede Skinny Pants",
+    "price": "$24.99",
+    "color": "In The Buff",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
     "title": "Suzy Shier Side Striped Skinny Pants with Exposed Front Zipper",
@@ -96,16 +120,22 @@
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
-    "title": "Suzy Shier Fleece Lined Jogger Leggings",
-    "price": "$24.00",
+    "title": "Suzy Shier Pull-on Skinny Pants with Zipper Pockets",
+    "price": "$36.00",
     "color": "Black",
-    "sizes": "S/M,L/XL,"
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
     "title": "Suzy Shier Sashed Pleated Crepe Ankle Pants",
     "price": "$19.99",
     "color": "Black",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Seamless Fleece Lined Leggings",
+    "price": "$12.99",
+    "color": "Black",
+    "sizes": "S/M,L/XL,"
   },
   {
     "title": "Suzy Shier Sashed Crepe Pull-on Pants with Wide Legs",
@@ -120,27 +150,141 @@
     "sizes": "Small,Medium,Large,"
   },
   {
-    "title": "Suzy Shier Grid Pattern Brushed Leggings",
+    "title": "Suzy Shier Skinny Glencheck Ankle Pants with Seam Details",
+    "price": "$39.00",
+    "color": "Grey",
+    "sizes": "Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Skinny Pants with Diagonal Zip Pockets",
+    "price": "$36.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Leggings with 4-stripe Detail",
+    "price": "$12.99",
+    "color": "Grey",
+    "sizes": "S/M,L/XL,"
+  },
+  {
+    "title": "Suzy Shier Belted Pull-on Skinny Pants",
+    "price": "$36.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Pull-on Joggers with Side Stripes",
+    "price": "$28.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Wide Waisted Leggings",
+    "price": "$9.99",
+    "color": "Black",
+    "sizes": "Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Belted Denim Skirt",
+    "price": "$36.00",
+    "color": "Dk Denim Blue",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Pull-on Skinny Pants",
+    "price": "$19.99",
+    "color": "Black",
+    "sizes": "Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier High Rise Skinny Jeans with Side Taping",
+    "price": "$49.00",
+    "color": "Dk Denim Blasted",
+    "sizes": "1,3,5,7,9,11,13,15,"
+  },
+  {
+    "title": "Suzy Shier Navajo Printed Leggings",
+    "price": "$18.00",
+    "color": "Rumba Red",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Skinny Jeans with Front Hem Slit",
+    "price": "$39.00",
+    "color": "Dk Denim Blasted",
+    "sizes": "1,3,5,7,9,11,13,15,"
+  },
+  {
+    "title": "Suzy Shier Camouflage Leggings",
+    "price": "$24.00",
+    "color": "Dk Green",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Plaid Brushed Leggings",
     "price": "$18.00",
     "color": "Black",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
-    "title": "Suzy Shier Ruffled Front Skirt with Back Flounce",
+    "title": "Suzy Shier Buffalo Plaid Brushed Leggings",
+    "price": "$18.00",
+    "color": "Mars Red",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Coated Wide Waisted Leggings",
+    "price": "$24.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Skinny Pull-on Ankle Pants with Vertical Pockets",
+    "price": "$34.00",
+    "color": "Black",
+    "sizes": "Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Belted Glencheck Crepe Ankle Pants",
+    "price": "$39.00",
+    "color": "Grey",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Pull-on Scuba Leopard Print Pants",
+    "price": "$17.99",
+    "color": "Brown",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Crepe Joggers with Side Taping and Zip Pockets",
+    "price": "$36.00",
+    "color": "Black",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Striped Pleated Pull-on Pants",
+    "price": "$36.00",
+    "color": "Dk Grey",
+    "sizes": "X-Small,Small,Medium,Large,X-Large,"
+  },
+  {
+    "title": "Suzy Shier Sashed Glencheck Hi Low Skirt",
     "price": "$34.00",
     "color": "Black",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   },
   {
-    "title": "Suzy Shier Chevron Sweater Knit Flippy Skirt",
-    "price": "$29.00",
+    "title": "Suzy Shier Sashed Paperbag Ankle Pants",
+    "price": "$36.00",
     "color": "Black",
-    "sizes": "Small,Medium,Large,"
+    "sizes": "1,3,5,7,9,11,13,15,"
   },
   {
-    "title": "Suzy Shier Faux Suede Skinny Pants",
-    "price": "$24.99",
-    "color": "In The Buff",
+    "title": "Suzy Shier Cropped Pull-on Pants with Contrast Side Band",
+    "price": "$36.00",
+    "color": "Black",
     "sizes": "X-Small,Small,Medium,Large,X-Large,"
   }
 ]

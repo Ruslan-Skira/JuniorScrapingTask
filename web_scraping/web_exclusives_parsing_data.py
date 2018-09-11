@@ -21,13 +21,10 @@ def products_urls():
     count = 0
     urls = []
     for i in products:
-        pr_url = soup.find_all("a", href=re.compile("sz_trend_online-exclusives/products"))[count]["href"]
+        pr_url = i.contents[1].find_all("a", href=True)[0]["href"]
         urls.append('http://suzyshier.com' + pr_url)
         count += 1
-    urls = set(urls)
-
     return urls
-
 
 def get_data_from_url():
     count = 0
@@ -38,12 +35,12 @@ def get_data_from_url():
         soup = BeautifulSoup(r.content, features="html.parser")
         title = soup.find_all("h1", {"class": "header"})[0].text
         try:
-            price = soup.find_all("span", {"class": "product__price"})[0].text.strip()
-            befo_price = soup.find_all("span", {"class": "product__compare-at"})[0].text.strip()
-            price = price + befo_price
+            discount = soup.find_all("span", {"class": "product__price"})[0].text.strip()
+            price= soup.find_all("span", {"class": "product__compare-at"})[0].text.strip()
+            my_dic = {'title': title, 'price': price, 'discount': discount}
         except:
             price = soup.find_all("span", {"class": "product__price"})[0].text.strip()
-        my_dic = {'title': title, 'price': price}
+            my_dic = {'title': title, 'price': price}
         print(my_dic)
         full_dictionary.append(my_dic)
     with open('ExclusivePage.json', 'w') as f:
