@@ -22,9 +22,7 @@ import re
 #
 # Save project code in gitlab/github. Add simple readme file.
 
-#url = "https://suzyshier.com/collections/sz_shop-all"
-
-url = "https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms"
+url = "https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms?view_all=true"
 url_products = "https://suzyshier.com/collections/sz_bottoms_shop-all-bottoms/products"
 
 r = requests.get(url)
@@ -33,8 +31,7 @@ products = soup.find_all("li", class_="grid__item one-fifth medium--one-quarter 
 title = soup.find_all("h2", class_="featured-collection__product-title")
 price = soup.find_all("span")
 empty = []
-# for text in title:
-#     print("title :%s" % text.text)
+
 # todo take unic url of the products
 def products_urls():
     count = 0
@@ -49,10 +46,9 @@ def products_urls():
 
 # TODO write def for open and read at least tile from urls DONE.
 # todo create dictionary and put there title DONE.
-# todo
 def get_data_from_url():
     count = 0
-    full_dictionary= []
+    full_dictionary = []
     for i in products_urls():
 
         r = requests.get(i)
@@ -84,4 +80,4 @@ get_data_from_url()
 
 
 
-#TODO def WEB EXCLUSIVES():
+# TODO def WEB EXCLUSIVES():
