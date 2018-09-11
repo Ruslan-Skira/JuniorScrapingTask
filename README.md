@@ -5,7 +5,10 @@ folder <web_scraping>
 after running the file json with data will save at the same folder with the name "firstBottomPage.json"
 2. file <web_exclusives_parsing_data.py> 
 after running the file json with data will save at the same folder with the name "ExclusivePage.json"
-
+ Problem
+ #not solved yet 
+ 1. specs
+   2. description
 
 
 
